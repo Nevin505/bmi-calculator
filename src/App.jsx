@@ -90,26 +90,25 @@ function App() {
           { userData.height && <p>{userData.height} cm</p>}
             <Card>
             <div>
-            <Input Inputtype="range" minValue={100} maxValue={220} name="height"  value={userData.height}  onChange={handleChange} />
+            <Input name="height"  value={userData.height}  onChange={handleChange}   type="range" min={100} max={220}/>
              <p className="text-red-600 text-sm " >{errorss?.height}</p>
             </div>
             </Card>
              <div className="flex gap-4 w-full">
              <Card>
               <div>
-              <Input Inputtype="number" placeholder="Enter You Weight" name="weight"   value={userData.weight}  onChange={handleChange} />
+              <Input placeholder="Enter You Weight" name="weight"   value={userData.weight}  onChange={handleChange}   type="number"/>
               <p className="text-red-600 text-sm pt-1">{errorss?.weight }</p>
               </div>
              </Card>
              <Card>
               <div>
-              <Input Inputtype="number" placeholder="Enter You Age" name="age" value={userData.age} onChange={handleChange} />
+              <Input  placeholder="Enter You Age" name="age" value={userData.age} onChange={handleChange} type="number" />
               <p className="text-red-600 text-sm pt-1">{errorss?.age }</p>
               </div>
              </Card>
              </div>
               <button style={{color:"black",marginBlock:'1rem'}}>Calculate</button>
-
             </form>
 
            </div>
