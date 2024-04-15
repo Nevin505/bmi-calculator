@@ -78,10 +78,10 @@ function App() {
             <form  onSubmit={handleSave}> 
              <div className="flex gap-4 w-full">
              <Card>
-              <button className=" active:bg-slate-600" type='button' style={{color:"black"}} name="gender" placeholder="Male" onClick={()=>handleClickChange('Male')}> Male</button>
+              <button  className=" bg-white px-2 py-1 rounded-lg active:bg-slate-600" type='button' style={{color:"black"}} name="gender" placeholder="Male" onClick={()=>handleClickChange('Male')}> Male</button>
              </Card>
              <Card>
-              <button className="active:bg-slate-600"   style={{color:"black"}} onClick={()=>handleClickChange('Female')}>Female</button>
+              <button className=" bg-white px-2 py-1 rounded-lg active:bg-slate-600"   style={{color:"black"}} onClick={()=>handleClickChange('Female')}>Female</button>
              </Card>
              </div>
               <p className="text-red-600 text-sm pt-1" >{errorss?.gender}</p>
@@ -108,7 +108,7 @@ function App() {
               </div>
              </Card>
              </div>
-              <button style={{color:"black",marginBlock:'1rem'}}>Calculate</button>
+              <button  className=" bg-white px-2 py-1 rounded-lg active:bg-slate-600" style={{color:"black",marginBlock:'1rem'}}>Calculate</button>
             </form>
 
            </div>
