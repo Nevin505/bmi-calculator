@@ -70,8 +70,8 @@ function App() {
 
   }
   return (
-        <div>
-      { toggleCard  && <div className="hero flex items-center justify-center w-screen ">
+        <div  className="mt-5">
+      { toggleCard  && <div className="hero flex items-center justify-center w-screen  ">
            <div className="flex flex-col gap-4 p-4 bg-white-600 border-2 border-black w-2/5 text-center rounded-lg text-white  max-[800px]:w-4/5"   style={{backgroundColor:'rgb(9,14,34)'}}>
             <p>BMI Calculator</p>
             <p>Chose Gendar</p>
